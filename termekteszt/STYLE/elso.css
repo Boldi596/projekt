@@ -1,0 +1,26 @@
+#menu li{
+    list-style-type: none;
+    display: inline;
+    border-right: 1px dotted black;
+    padding: 5px 20px; 
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+body {
+    background-color: lightyellow;
+}
+
+.kekhatter {
+    background-color: blue;
+}
+
+.feherszoveg {
+    color: white; 
+}
+
+.kiemeltB {
+    font-weight: bold; 
+}

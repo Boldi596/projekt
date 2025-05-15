@@ -1,0 +1,7 @@
+html, body {
+    height: 100%; /* Biztosítja, hogy az egész oldalt lefedje */
+    margin: 0;
+    padding: 0;
+    background-size: cover; 
+    background-color: rgb(255, 202, 161);
+}
