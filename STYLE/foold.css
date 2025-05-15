@@ -1,0 +1,64 @@
+/* Az alapvető HTML és BODY beállítások */
+html, body {
+    height: 100%;          /* Teljes magasság kitöltése */
+    margin: 0;            /* Külső margók eltávolítása */
+    padding: 0;           /* Belső margók eltávolítása */
+    background-size: cover;    /* Háttérkép teljes kitöltése */
+    background-color: rgb(255, 202, 161);    /* Barackos háttérszín RGB-ben */
+}
+
+/* A fő konténer osztály beállításai */
+.egyoldalra {
+    margin-top: 90px;    /* Felső margó a navbar alatt */
+    height: calc(100vh - 90px);  /* A képernyő magasságából levonja a navbar magasságát */
+    display: flex;       /* Flexbox elrendezés használata */
+    flex-direction: column;    /* Elemek függőleges rendezése */
+    justify-content: center;   /* Függőleges középre igazítás */
+    align-items: center;       /* Vízszintes középre igazítás */
+    padding: 10px;            /* Belső térköz minden oldalon */
+    box-sizing: border-box;   /* A padding beleszámít a teljes méretbe */
+}
+
+/* A név stílusának beállításai */
+.nev {
+    font-size: 60px;     /* Betűméret */
+    font-family: Georgia, 'Times New Roman', Times, serif;    /* Betűtípusok sorrendben */
+    text-align: center;   /* Szöveg középre igazítása */
+    order: 2;            /* A flex sorrendben hátrébb helyezi (képek után) */
+}
+
+/* Bemutatkozás szöveg stílusa */
+#bemutatkozas {
+    font-size: 20px;     /* Betűméret */
+}
+
+/* Mobilnézet beállításai (768px szélesség alatt) */
+@media (max-width: 768px) {
+    .egyoldalra {
+        margin-top: 70px;    /* Kisebb felső margó mobilon */
+        padding: 5px;        /* Kisebb belső térköz */
+        height: auto;        /* Automatikus magasság a tartalom szerint */
+    }
+
+    .nev {
+        font-size: 40px;     /* Kisebb betűméret mobilon */
+        margin-bottom: 20px; /* Alsó térköz */
+        order: -1;          /* Előre helyezi a sorrendben (képek elé) */
+    }
+
+    /* A Bootstrap konténer és sor módosításai */
+    .container .row {
+        flex-direction: column;  /* Elemek egymás alá rendezése */
+        gap: 20px;              /* Térköz az elemek között */
+    }
+
+    #bemutatkozas {
+        font-size: 16px;        /* Kisebb betűméret mobilon */
+    }
+
+    /* Bootstrap oszlop módosítása mobilon */
+    .col-md-4 {
+        width: 100%;            /* Teljes szélesség */
+        margin-bottom: 10px;    /* Alsó térköz */
+    }
+}

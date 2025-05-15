@@ -1,0 +1,37 @@
+html, body {
+    height: 100%; /* Biztosítja, hogy az egész oldalt lefedje */
+    margin: 0;
+    padding: 0;
+    background: url("../MEDIA/after-the-rain-8686213_1280.jpg") no-repeat center center fixed;
+    background-size: cover; 
+}
+
+
+
+.feherszoveg {
+    color: white; 
+}
+
+
+
+body {
+    display: flex;
+    justify-content: center; /* Vízszintesen középre */
+    align-items: center; /* Függőlegesen középre */
+    height: 100vh; /* Teljes képernyő magasság */
+    margin: 0;
+    background-color: #f0f0f0; /* Világos háttér a kontraszt miatt */
+}
+
+/* A téglalap (űrlap konténer) stílusa */
+.form-container {
+    background-color: white;
+    border-radius: 15px; /* Lekerekített sarkok */
+    padding: 2px; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+    width: 400px; /* Fix szélesség */
+    height: 600px;
+    text-align: center; /* Középre igazított tartalom */
+}
+
+
